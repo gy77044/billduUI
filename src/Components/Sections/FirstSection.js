@@ -9,11 +9,11 @@ const FirstSection = () => {
     <>
       <div class="relative justify-center items-center m-32 md:m-40  md:flex">
         <div className="  md:p-6 "> <img
-          className="s1-img"
+          className="s1-img "
           alt="Pro invoice maker for small businesses"
           src={s1Beaver}
         /></div>
-        <div className="md:p-6">
+        <div className="p-6">
           <div className="text-2xl text-blue-700 font-bold mb-10">EASY INVOICING FOR SMALL BUSINESSES</div>
           <div className="text-5xl text-blue-700 font-extrabold mb-10">THE BEST RATED INVOICING APP</div>
           <button className="flex text-3xl items-center text-white bg-orange-600 border-[0.4vh] border-orange-600 hover:bg-white hover:text-orange-600  focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-full text-sm px-14 py-2 text-center mr-3 mb-8 md:mr-0">TRY IT FREE  <HiArrowSmRight size={30} /></button>

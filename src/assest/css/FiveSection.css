@@ -223,11 +223,11 @@
 }
 
 .marquee-content {
-  animation: carouselAnim 50s infinite alternate;
+  animation: carouselAnim 10s infinite alternate;
 }
 
 .marquee-content2 {
-  animation: ccarouselAnim 50s infinite alternate;
+  animation: ccarouselAnim 10s infinite alternate;
 }
 
 @keyframes carouselAnim {
@@ -256,6 +256,15 @@
   }
 } */
 
+@media all and (max-width: 1050px) {
+  .section-6 {
+    width: 100%;
+    margin: 0 50px;
+  }
+  /* .s6-text-container {
+    width: 100%;
+  } */
+}
 @media all and (max-width: 771px) {
   .section-6 {
     width: 100%;

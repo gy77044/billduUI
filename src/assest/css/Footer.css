@@ -183,13 +183,29 @@
   display: flex;
   flex-direction: column;
 }
-
-@media all and (max-width: 771px) {
+@media all and (max-width: 1200px) {
+  .footer-container {
+    margin: 2rem;
+  }
+}
+@media all and (max-width: 850px) {
   .footer-top-row {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
   .footer-box {
     margin-right: 0;
+  }
+
+  .sfooter-grid-row {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .sfooter-grid-box {
+    max-width: 60%;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
   }
 }
