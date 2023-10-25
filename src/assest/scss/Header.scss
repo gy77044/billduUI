@@ -1,0 +1,204 @@
+.header-container {
+  // font-family: Inter-Bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  color: blue;
+  background-color: white;
+  transition: '0.2s';
+  z-index: 99999999999 !important;
+
+  .header-logo-section {
+    margin-left: 30px;
+    .header-logo-img {
+      position: absolute;
+      top: 18px;
+      transition: 0.2s;
+    }
+  }
+  .header-menu-container {
+    .menu-option {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: width 2s, height 2s, transform 2s;
+    }
+
+    .menu-option:hover {
+      color: #ff7846;
+    }
+    .material-symbols-outlined :hover {
+      color: #ff7846;
+      transition: 0.5s;
+      transform: rotate(180deg);
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .material-symbols-outlined:hover .dropdown-content {
+      display: block;
+    }
+  }
+  .header-button-container {
+    display: flex;
+    margin-right: 30px;
+    .login-button {
+      color: blue;
+      // font-family: Inter-Bold, sans-serif;
+      font-size: 1.0625rem;
+      padding: 15px 0;
+      margin: 0 20px;
+      outline: none;
+      font-weight: 800;
+      text-transform: uppercase;
+      transition: color 0.25s ease-out;
+    }
+    .login-button:hover {
+      color: #ff7846;
+    }
+    .free-button {
+      font-family: Inter-Bold;
+      color: white;
+      background-color: #ff7846;
+      padding: 0.5em 1.2rem;
+      margin: auto;
+      border: 3px solid #ff7846;
+      border-radius: 60px;
+      font-weight: 700;
+      min-width: 150px;
+    }
+    .free-button:hover {
+      color: #ff7846;
+      background-color: white;
+    }
+  }
+}
+.header-hamMenu-container {
+  display: none;
+}
+.header-sidebar {
+  display: none;
+}
+.header-menu-container {
+  display: flex;
+}
+
+.menu-option {
+  padding: 20px !important;
+  font-weight: 700;
+}
+:root {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  --bar-width: 35px;
+  --bar-height: 4px;
+  --hamburger-gap: 1px;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  cursor: pointer;
+}
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: '';
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: blue;
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing);
+}
+.hamburger-menu input {
+  appearance: none;
+  width: 0;
+}
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) * -2.5);
+}
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) * -1.25);
+  background-color: blue;
+}
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+@media (max-width: 960px) {
+  .header-container {
+    width: 100%;
+  }
+  .header-hamMenu-container {
+    display: flex;
+    padding-left: 1rem;
+    width: 2rem;
+  }
+  .header-sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rem;
+    position: absolute;
+    background-color: var(--white-bg-color);
+    width: 40%;
+    min-width: 10rem;
+    padding: 0 2rem 2rem;
+    transition: translate var(--animation-timing);
+    translate: 0 -200%;
+  }
+
+  .header-hamMenu-container:has(input:checked) + .header-sidebar {
+    translate: 0 0;
+  }
+  .header-logo-section {
+    margin: 0;
+  }
+  .header-logo-img {
+    width: 80px;
+    height: auto !important;
+  }
+  .header-container .header-logo-section .header-logo-img {
+    position: relative;
+    top: 0;
+  }
+  .header-container .header-logo-section {
+    margin: 0;
+  }
+  .header-menu-container {
+    display: none;
+  }
+  .login-button {
+    display: none;
+  }
+  .header-container .header-button-container {
+    margin: 0;
+  }
+  .header-button-container {
+    padding-right: 1rem;
+  }
+  .header-container .header-button-container .free-button {
+    min-width: fit-content;
+  }
+}
+@media (max-width: 512px) {
+  .header-sidebar {
+    width: 100%;
+  }
+}

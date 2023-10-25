@@ -7,7 +7,7 @@ import { HiArrowSmRight } from "react-icons/hi";
 const FirstSection = () => {
   return (
     <>
-      <div class="relative justify-center items-center m-32 md:m-40  md:flex">
+      <div className="relative justify-center items-center m-32 md:m-40  md:flex">
         <div className="  md:p-6 "> <img
           className="s1-img "
           alt="Pro invoice maker for small businesses"

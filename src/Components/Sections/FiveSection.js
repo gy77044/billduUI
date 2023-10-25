@@ -13,7 +13,7 @@ import '../../assest/css/FiveSection.css'
 const FiveSection = () => {
   return (
     <>
-      <section className="section-6">
+      {/* <section className="section-6">
         <div className="s6-text-container">
           <div className="s6-text1">UNIQUE FOR EVERY SMALL BUSINESS</div>
           <div className="s6-text2">
@@ -76,10 +76,10 @@ const FiveSection = () => {
           <span>TRY IT FREE</span>
           <HiArrowSmRight size={25} />
         </button>
-      </section>
-      <section className="section-7">
+      </section> */}
+      {/* <section className="section-7">
         <div className="section-7-text">
-          {/* YEAH! */}
+        
           <img
             className="section-7-img"
             src={require("../../assest/images/hand.png")}
@@ -91,27 +91,26 @@ const FiveSection = () => {
           </div>
         </div>
         <img src="" alt="" />
-      </section>
-      <section className="section-10">
+      </section> */}
+      {/* <section className="section-10">
         <Marque />
-        {/* <Marque /> */}
 
         <button className="s6-btn">
           <span>READ MORE ON TRUST PILOT</span>
           <HiArrowSmRight size={20} />
         </button>
-      </section>
+      </section> */}
       <section className="section-8">
         <div className="s8-img-container">
           <img className="s8-img" alt="Beaver proud" src={s8Beaver} />
         </div>
-        <div className="s8-text-container mb-5">
-          <div className="s8-text1">Start Buillduing with Billdu</div>
+        <div className="s8-text-container mb-5 p-8">
+          <div className="s8-text1 ">Get Started with Billdu</div>
           <button className="s8-btn">
             <span>TRY IT FREE</span>
             <HiArrowSmRight size={25} />
           </button>
-          <p className="s8-text2">Invoicing · Sales · Communication</p>
+          <p className="s8-text2">Invoicing · Sales</p>
         </div>
       </section>
       <div className="svglogo">

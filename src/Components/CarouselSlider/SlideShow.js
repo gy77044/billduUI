@@ -42,7 +42,7 @@ export default function Slideshow({ slides }) {
           >
             {slides.map((data, index) => {
               return (
-                <div className="slide" key={index}>
+                <div  className="slide" key={index}>
                   <img src={data.image} alt="slide" />
                   <img src={data.image} alt="slide" />
                 </div>

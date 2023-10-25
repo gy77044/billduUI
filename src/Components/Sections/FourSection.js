@@ -8,7 +8,7 @@ const FourSection = () => {
   return (
     <>
       <div className='mb-50'>
-        <div class="md:flex md:items-center  mt-60 md:mx-60">
+        <div className="md:flex md:items-center  mt-60 md:mx-60">
           <div className='text-9xl font-bold text-blue-700 mb-10'>1</div>
           <div className='md:pl-16'>
             <strong className='text-3xl text-blue-700 font-bold leading-loose'>INVOICING</strong>
@@ -27,7 +27,7 @@ const FourSection = () => {
         </div>
       </div>
       <div className='' >
-        <div class="md:flex md:items-center  md:mt-60 md:mx-60">
+        <div className="md:flex md:items-center  md:mt-60 md:mx-60">
           <div className='text-9xl font-bold text-blue-700 mb-10'>2</div>
           <div className='md:pl-16'>
             <strong className='text-3xl text-blue-700 font-bold leading-loose'>SALES</strong>
