@@ -1,105 +1,11 @@
 import React from 'react'
 import s8Beaver from "../../assest/svg/s8-beaver.svg"
-import grid00 from "../../assest/svg/grid00.svg";
-import grid01 from "../../assest/svg/grid01.svg";
-import grid02 from "../../assest/svg/grid02.svg";
-import grid10 from "../../assest/svg/grid10.svg";
-import grid11 from "../../assest/svg/grid11.svg";
-import grid12 from "../../assest/svg/grid12.svg";
 import { HiArrowSmRight } from "react-icons/hi";
-import Marque from "../CarouselSlider/Marque";
 import '../../assest/css/FiveSection.css'
 
 const FiveSection = () => {
   return (
     <>
-      {/* <section className="section-6">
-        <div className="s6-text-container">
-          <div className="s6-text1">UNIQUE FOR EVERY SMALL BUSINESS</div>
-          <div className="s6-text2">
-            For small businesses, Billdu keeps your business organized and
-            accessible. For larger teams, advanced features help your business
-            scale easily ... in app or online.
-          </div>
-        </div>
-        <div className="s6-grid-container">
-          <div className="s6-grid-row">
-            <div className="s6-grid-box grid00">
-              <img className="s6-grid-img" alt="gridimg" src={grid00} />
-              <div className="s6-grid-text1">CREATIVES & MARKETING</div>
-              <div className="s6-grid-text2">
-                Make appointments Send professional invoices Receive quote
-                requests
-              </div>
-            </div>
-            <div className="s6-grid-box grid01">
-              <img className="s6-grid-img" alt="gridimg" src={grid01} />
-              <div className="s6-grid-text1">CRAFTSMEN & PUBLIC SERVICES</div>
-              <div className="s6-grid-text2">
-                Share public profile Send estimates Accept online bookings
-              </div>
-            </div>
-            <div className="s6-grid-box grid02">
-              <img className="s6-grid-img" alt="gridimg" src={grid02} />
-              <div className="s6-grid-text1">SHOPPING & RETAIL</div>
-              <div className="s6-grid-text2">
-                Simple online store Customer live chat support Website widget
-              </div>
-            </div>
-          </div>
-          <div className="s6-grid-row">
-            <div className="s6-grid-box grid10">
-              <img className="s6-grid-img" alt="gridimg" src={grid10} />
-              <div className="s6-grid-text1">DEVELOPERS & IT</div>
-              <div className="s6-grid-text2">
-                Business inbox Track expenses Send superfast invoices
-              </div>
-            </div>
-            <div className="s6-grid-box grid11">
-              <img className="s6-grid-img" alt="gridimg" src={grid11} />
-              <div className="s6-grid-text1">HOTELS & RESTAURANTS</div>
-              <div className="s6-grid-text2">
-                Availability management Room or table bookings Accept online
-                payments
-              </div>
-            </div>
-            <div className="s6-grid-box grid12">
-              <img className="s6-grid-img" alt="gridimg" src={grid12} />
-              <div className="s6-grid-text1">TRAVEL & TRANSPORTATION</div>
-              <div className="s6-grid-text2">
-                On-the-go management Accept online bookings Easy CRM system
-              </div>
-            </div>
-          </div>
-        </div>
-        <button className="s6-btn">
-          <span>TRY IT FREE</span>
-          <HiArrowSmRight size={25} />
-        </button>
-      </section> */}
-      {/* <section className="section-7">
-        <div className="section-7-text">
-        
-          <img
-            className="section-7-img"
-            src={require("../../assest/images/hand.png")}
-            alt=""
-          />
-          <div className="section-7-text-2">LET PEOPLE DO THE TALKING</div>
-          <div className="s1-text3 text-xl text-blue-700 font-medium">
-            <span className="section-7-rating ">★★★★★</span> 4.8 • 45K RATINGS
-          </div>
-        </div>
-        <img src="" alt="" />
-      </section> */}
-      {/* <section className="section-10">
-        <Marque />
-
-        <button className="s6-btn">
-          <span>READ MORE ON TRUST PILOT</span>
-          <HiArrowSmRight size={20} />
-        </button>
-      </section> */}
       <section className="section-8">
         <div className="s8-img-container">
           <img className="s8-img" alt="Beaver proud" src={s8Beaver} />

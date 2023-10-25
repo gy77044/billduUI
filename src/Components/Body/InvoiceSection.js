@@ -3,7 +3,7 @@ import DarkButton from '../Button/DarkButton'
 import LightButton from '../Button/LightButton'
 import LabelwithValue from '../LabelwithValue/LabelwithValue'
 import { labelList } from '../LabelwithValue/LabelList'
-import { IconAdd, IconSetting } from '../../assest/Icon'
+import { IconAdd, IconDrag, IconSetting } from '../../assest/Icon'
 import UploadLogo from '../UploadLogo/UploadLogo'
 import BilledDetail from './BilledDetail.js/BilledDetail'
 import InputwithLabel from './Input/InputwithLabel'
@@ -15,7 +15,7 @@ const InvoiceSection = () => {
 
     <div className='bg-[#f6f7f8]'>
       <div className='max-w-5xl mx-auto'>
-        <div className='flex items-center justify-end py-4'>
+        <div className='flex  items-center justify-end py-4'>
           <LightButton name="Send Document by Email" />
           <DarkButton name="generate document" />
         </div>
@@ -61,13 +61,15 @@ const InvoiceSection = () => {
               <InputwithLabel labelname="DELIVERY DATE:" Type="date" />
             </div>
             <div className="mb-2 p-4">
-              <div className="text-sm text-black font-extrabold bg-gray-50 border border-gray-300 rounded-lg block w-full p-2.5">MORE OPTIONS </div>
+              <div className="text-sm text-black font-extrabold bg-gray-100 border border-gray-300 rounded-lg block w-full p-2.5">MORE OPTIONS </div>
             </div>
             <div className="grid gap-3 mb-3 md:grid-cols-7 p-4">
-              {/* <IconDrag /> */}
+
               <div className='grid col-span-2'>
-                <label htmlFor="ii" className="block mb-2 text-xs uppercase text-black font-bold">ITEM</label>
-                <input type="text" id={"ii"} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value={""} required />
+                <label htmlFor="ii" className="block mb-2 ml-7 text-xs uppercase text-black font-bold">ITEM</label>
+                <div className='flex'>
+                  <IconDrag />  <input type="text" id={"ii"} className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value={""} required />
+                </div>
               </div>
               <InputwithLabel labelname="QUANTITY" Type="text" />
               <InputwithLabel labelname="UNIT" Type="text" />

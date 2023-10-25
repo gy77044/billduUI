@@ -17,7 +17,7 @@ const AccordionwithAdd = () => {
   return (
     <div className={` flex flex-col justify-between items-center p-4`} >
       <div className='text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0028F2] mt-24 mb-16'>FREQUENTLY ASKED QUESTIONS</div>
-      <div className='w-full  lg:w-[60%] mx-10'>
+      <div className='w-full  lg:w-[55%] mx-10'>
         {
           accordionList.map((itm, index) => {
             return (

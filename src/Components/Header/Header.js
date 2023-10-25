@@ -52,7 +52,7 @@ const Header = () => {
             <input type="checkbox" />
           </label>
         </div>
-        <div className="header-sidebar">
+        {/* <div className="header-sidebar">
           {Object.values(menuList).map((item) => {
             return (
               <>
@@ -62,7 +62,7 @@ const Header = () => {
               </>
             );
           })}
-        </div>
+        </div> */}
         <div className="header-logo-section">
           <img
             style={{

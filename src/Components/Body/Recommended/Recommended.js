@@ -68,7 +68,7 @@ const Recommended = () => {
             </>)
           })}
         </div>
-        <div className='flex flex-col justify-center items-center'>
+        <div className='flex flex-col justify-center items-center '>
           {recommendList.map((itm, index) => {
             return (<>
               <p key={index} className='mb-2'>

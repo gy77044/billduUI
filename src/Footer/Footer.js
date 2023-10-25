@@ -212,10 +212,12 @@ const Footer = () => {
       </div>
       <div className="footer-bottom-row">
         <div className="footer-text1 items-center ">
-          MADE WITH
-          <span className="footer-icon-heart mx-1">
-            <AiTwotoneHeart />
-          </span>
+          <div className="flex items-center">
+            MADE WITH
+            <span className="footer-icon-heart mx-1">
+              <AiTwotoneHeart />
+            </span>
+          </div>
           FOR SMALL BUSINESS OWNERS
         </div>
         <div className="footer-text2">
