@@ -1,4 +1,3 @@
-// import "../../assest/scss/Footer.scss";
 import { AiTwotoneHeart } from "react-icons/ai";
 import footerImg from "../assest/svg/footer-image.svg";
 import { AiFillStar } from "react-icons/ai";
@@ -124,9 +123,9 @@ const Footer = () => {
               <div className="sfooter-grid-box ">
 
                 <div className="footerGp-heading">SOLUTIONS</div>
-                {Object.keys(footerGp1).map((item, key) => {
+                {Object.keys(footerGp1).map((item, index) => {
                   return (
-                    <a className="footerGp-link" key={key} href={footerGp1.item}>
+                    <a className="footerGp-link" key={index} href={footerGp1.item}>
                       {item}
                     </a>
                   );
@@ -137,9 +136,9 @@ const Footer = () => {
               <div className="sfooter-grid-box ">
 
                 <div className="footerGp-heading">FEATURES</div>
-                {Object.keys(footerGp2).map((item, key) => {
+                {Object.keys(footerGp2).map((item, index) => {
                   return (
-                    <a className="footerGp-link" key={key} href={footerGp2.item}>
+                    <a className="footerGp-link" key={index} href={footerGp2.item}>
                       {item}
                     </a>
                   );
@@ -148,9 +147,9 @@ const Footer = () => {
               <div className="sfooter-grid-box ">
 
                 <div className="footerGp-heading">TEMPLATES</div>
-                {Object.keys(footerGp3).map((item, key) => {
+                {Object.keys(footerGp3).map((item, index) => {
                   return (
-                    <a className="footerGp-link" key={key} href={footerGp3.item}>
+                    <a className="footerGp-link" key={index} href={footerGp3.item}>
                       {item}
                     </a>
                   );
@@ -161,9 +160,9 @@ const Footer = () => {
               <div className="sfooter-grid-box ">
 
                 <div className="footerGp-heading">FREE GENERATIONS</div>
-                {Object.keys(footerGp4).map((item, key) => {
+                {Object.keys(footerGp4).map((item, index) => {
                   return (
-                    <a className="footerGp-link" key={key} href={footerGp4.item}>
+                    <a className="footerGp-link" key={index} href={footerGp4.item}>
                       {item}
                     </a>
                   );
@@ -172,9 +171,9 @@ const Footer = () => {
               <div className="sfooter-grid-box ">
 
                 <div className="footerGp-heading">LANGUAGES</div>
-                {Object.keys(footerGp5).map((item, key) => {
+                {Object.keys(footerGp5).map((item, index) => {
                   return (
-                    <a className="footerGp-link" key={key} href={footerGp5.item}>
+                    <a className="footerGp-link" key={index} href={footerGp5.item}>
                       {item}
                     </a>
                   );
@@ -183,9 +182,9 @@ const Footer = () => {
               <div className="sfooter-grid-box ">
 
                 <div className="footerGp-heading">LEARN</div>
-                {Object.keys(footerGp6).map((item, key) => {
+                {Object.keys(footerGp6).map((item, index) => {
                   return (
-                    <a className="footerGp-link" key={key} href={footerGp6.item}>
+                    <a className="footerGp-link" key={index} href={footerGp6.item}>
                       {item}
                     </a>
                   );
@@ -196,9 +195,9 @@ const Footer = () => {
               <div className="sfooter-grid-box ">
 
                 <div className="footerGp-heading">FROM THE BLOG</div>
-                {Object.keys(footerGp7).map((item, key) => {
+                {Object.keys(footerGp7).map((item, index) => {
                   return (
-                    <a className="footerGp-link" key={key} href={footerGp7.item}>
+                    <a className="footerGp-link" key={index} href={footerGp7.item}>
                       {item}
                     </a>
                   );

@@ -1,6 +1,6 @@
 import React from 'react'
 import ToggleButton from '../ToggleButton/ToggleButton'
-const DiscountInput = () => {
+const DiscountInput = ({ name, value, onChange }) => {
   return (
     <>
 
@@ -11,7 +11,7 @@ const DiscountInput = () => {
         <button id="dropdown-button-2" data-dropdown-toggle="dropdown-search-city" className="text-sm uppercase text-black font-extrabold rounded-lg  block w-fit px-10 p-2.5" type="button">Discount
         </button>
         <div className="relative w-fit">
-          <input type="search" id="location-search" className="block p-2.5 w-fit z-20 text-sm text-black font-extrabold border border-gray-300 rounded-l-lg " required />
+          <input type="search" id="location-search" className="block p-2.5 w-fit z-20 text-sm text-black font-extrabold border border-gray-300 rounded-l-lg " required name={name} value={value} onChange={onChange} />
           <button type="submit" className="absolute top-0 right-0 h-full p-2.5 px-3.5 text-sm font-medium bg-gray-50 text-blue-700  border border-blue-700">
             %
             <span className="sr-only">Search</span>

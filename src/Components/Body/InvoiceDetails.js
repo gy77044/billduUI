@@ -56,9 +56,9 @@ const InvoiceDetails = () => {
           <p className='text-3xl text-[#0028F2] font-bold'>HOW TO MAKE A CUSTOM INVOICE USING BILLDU ONLINE CREATOR</p>
           <p className='text-[16px] text-[#0028F2] font-normal mt-7'>Generating a custom invoice with Billdu takes mere moments. Just fill in the required fields, including your and your client's business details, the issue and delivery date, the items and price, tax rate, and invoice number. Then, spice up the invoice with a logo or colorful template, and email it to a client straightaway or download the PDF completely free.</p>
           <p className='text-[16px] text-[#0028F2] font-bold mt-10 mb-6'>Required</p>
-          {requiredOptionalList.slice(0, 6).map((itm) => {
+          {requiredOptionalList.slice(0, 6).map((itm, index) => {
             return (<>
-              <div key={itm.count}>
+              <div key={index}>
                 <span className='font-normal text-[#0028F2]'>
                   {itm.count}.&nbsp;
                 </span>
@@ -72,9 +72,9 @@ const InvoiceDetails = () => {
             </>)
           })}
           <p className='text-[16px] text-[#0028F2] font-bold mt-10 mb-6'>Optional</p>
-          {requiredOptionalList.slice(6, 9).map((itm) => {
+          {requiredOptionalList.slice(6, 9).map((itm, index) => {
             return (<>
-              <div key={itm.count}>
+              <div key={index}>
                 <span className='font-normal text-[#0028F2]'>
                   {itm.count}.&nbsp;
                 </span>

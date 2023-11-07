@@ -52,17 +52,6 @@ const Header = () => {
             <input type="checkbox" />
           </label>
         </div>
-        {/* <div className="header-sidebar">
-          {Object.values(menuList).map((item) => {
-            return (
-              <>
-                <ul key={item.key}>
-                  <li>{item.name}</li>
-                </ul>
-              </>
-            );
-          })}
-        </div> */}
         <div className="header-logo-section">
           <img
             style={{
@@ -76,9 +65,6 @@ const Header = () => {
         <div className="header-menu-container">
           {menuList.map((item, index) => (
             <div className={`menu-option`} key={index}>
-              {/* {item.name} {item.arrow && <span className="material-symbols-outlined">
-                expand_more
-              </span>} */}
               <Lists name={item.name} arrow={item.arrow} />
             </div>
           ))}
